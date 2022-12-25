@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>This is inside the block in example html</h1>
+<img src= "{% static 'my_app/blub2.png' %}" alt='my_image'>
+{% endblock %}
+
+{% comment %} <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+</head>
+<body>
+    <h1>Example Html templates connected...</h1>
+    <p><a href = "{% url 'my_app:variable'%}">Click Here</a> </p>
+</body>
+</html> {% endcomment %}

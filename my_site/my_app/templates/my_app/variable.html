@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    {% comment %} <h1>Variables Html templates connected</h1>
+    <h2>My first name is "{{first_name | center:"30"}}" and the last name is "{{last_name | upper}}"</h2>
+    <h2>this is the list inside the dictionary {{some_list}}</h2>
+    <h2>print single value of list using index {{some_list.0}}</h2>
+    <h2>print dictionary inside the dictionary {{some_dict}}</h2>
+    <h2>print dictionary value inside the dictionary {{some_dict.inside_key}}</h2> {% endcomment %}
+    <h2>Variables</h2>
+    {% comment %} <h2>{{some_list}}</h2>
+    <ul>
+    {%for item in some_list%}
+        <li>{{item}}</li>
+    {% endfor %}
+    </ul> {% endcomment %}
+
+    {% comment %} {%if name == 'Usama' %}
+        <h1>Your name is: {{name}}</h2>
+        <h1>Your Roll Number is: {{roll_no}}</h1>
+    {% endif %} {% endcomment %}
+    <h2>{# This is the comment #}</h2>
+</body>
+</html>
